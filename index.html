@@ -13,7 +13,7 @@
     <!-- link to style.css  -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="welcomePage">
     <!-- nav bar  -->
     <div class="ui pointing menu">
       <a class="active item"> Home </a>
@@ -36,8 +36,11 @@
     <!-- nav bar ends  -->
 
     <!-- div for homepage content -->
-    <div class="ui vertical masterhead center aligned segment" id="mainPage">
-      <div class="ui text container">
+    <div
+      class="ui inverted vertical masterhead center aligned segment"
+      id="startingContent"
+    >
+      <div class="ui text container" id="textContainer">
         <!-- app name -->
         <h1>REC</h1>
         <!-- subtext -->
@@ -46,7 +49,7 @@
           with us.
         </h2>
         <!-- start button to go to next page -->
-        <button class="ui huge secondary button">START</button>
+        <button class="ui huge primary button">START</button>
       </div>
     </div>
 

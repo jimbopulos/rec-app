@@ -2,17 +2,20 @@
   box-sizing: border-box;
 }
 
-/* body {
+body {
   background-color: #8ec0e7;
-} */
+}
 
-body::before {
-  content: "";
+#welcomePage {
   background-image: url("https://wallpapercave.com/wp/wp4546211.jpg");
+}
+
+/* body::before {
+  content: "";
   background-size: cover;
   top: 0px;
   right: 0px;
   left: 0px;
   bottom: 0px;
   opacity: 0.5;
-}
+} */
