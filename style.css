@@ -10,9 +10,9 @@ body::before {
   content: "";
   background-image: url("https://wallpapercave.com/wp/wp4546211.jpg");
   background-size: cover;
-  opacity: 0.5;
   top: 0px;
   right: 0px;
   left: 0px;
   bottom: 0px;
+  opacity: 0.5;
 }
