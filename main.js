@@ -1,4 +1,5 @@
 // API for TheAudioDB
+
 const settings = {
 	"async": true,
 	"crossDomain": true,
