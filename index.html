@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rec App - Home</title>
 
     <!-- link to CSS framework cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
     <!-- link to style.css  -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav bar  -->
+    <div class="ui pointing menu">
+      <a class="active item"> Home </a>
+      <a class="item"> Messages </a>
+      <a class="item"> Friends </a>
+      <div class="right menu">
+        <div class="item">
+          <div class="ui transparent icon input">
+            <input type="text" placeholder="Search..." />
+            <i class="search link icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- nav bar ends  -->
     <h1>This will be a great app</h1>
     <!-- container -->
     <!-- header element -->
-        <!-- logo (button) -left -->
-        <!-- settings/login (button) -right -->
-            <!-- div for homepage content -->
-                <!-- app name -->
-                <!-- subtext -->
-                <!-- start button to go to next page -->
-    
+    <!-- logo (button) -left -->
+    <!-- settings/login (button) -right -->
+    <!-- div for homepage content -->
+    <!-- app name -->
+    <!-- subtext -->
+    <!-- start button to go to next page -->
+
     <!-- link to AJAX cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- script for semantic framework -->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <!-- link to js file -->
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
