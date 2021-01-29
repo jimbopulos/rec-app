@@ -38,6 +38,17 @@ $(".categoryBtn").each(attachCatBtnEvents);
 function attachCatBtnEvents(index, element) {
   var id = $(element).attr("id");
   $(`#${id}`).on("click", function () {
-    searchUnsplash(id);
+    window.location.href = `recs.html?id=${id}`;
+    // searchUnsplash(id);
   });
 }
+
+//get value of any parameter from the url (regex, regular expressions, on w3School)
+function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+};
