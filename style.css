@@ -11,7 +11,11 @@ body {
 }
 
 .menu {
-  background-color: white !important;
+  background-color: white;
+}
+
+.categoryBtn {
+  background-color: #84e795 !important;
 }
 
 /* body::before {
