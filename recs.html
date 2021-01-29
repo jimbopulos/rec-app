@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rec</title>
     <!-- link to CSS framework cdn -->
     <link
@@ -10,9 +10,17 @@
       href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
     />
     <!-- link to style.css  -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="ui secondary pointing menu">
+      <a class="active item"> Logo Goes here </a>
+      <div class="right menu">
+        <a class="ui item"> Settings </a>
+      </div>
+    </div>
+
     <h1>Get Rec'd</h1>
     <div id="category"></div>
     <div id="carousel"></div>
@@ -37,5 +45,5 @@
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <!-- link to js file -->
     <script src="recs.js"></script>
-</body>
+  </body>
 </html>
