@@ -19,7 +19,7 @@ $(document).ready(function () {
     });
   }
 
-    // API for TheAudioDB
+    // AJAX request for TheAudioDB
     function searchAudioDB(searchWord) {
     var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${searchWord}`;
 
