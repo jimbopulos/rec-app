@@ -7,7 +7,7 @@ $(document).ready(function () {
       url: unsplashUrl,
       method: "GET",
     }).then(function (response) {
-        console.log(response);
+      console.log(response);
       //map returns array of image elements
       var images = response.results.map(function (result) {
         var resultsUrl = result.urls.small;
@@ -15,12 +15,11 @@ $(document).ready(function () {
       });
       //re
       $("#carousel").html(images);
-      
     });
   }
 
-    // AJAX request for TheAudioDB
-    function searchAudioDB(searchWord) {
+  // AJAX request for TheAudioDB
+  function searchAudioDB(searchWord) {
     var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${searchWord}`;
 
     const settings = {
@@ -33,7 +32,7 @@ $(document).ready(function () {
         "x-rapidapi-host": "theaudiodb.p.rapidapi.com",
       },
     };
-    $.ajax(settings).done(function(response) {
+    $.ajax(settings).done(function (response) {
       console.log(response);
     });
   }
@@ -53,4 +52,19 @@ $(document).ready(function () {
 
   $("#category").text(id);
   searchUnsplash(id);
+});
+
+// Audio Functions ===================================
+let audioSrcs = ["./Audio/Mood.mp3"];
+
+// Gets Link for Theme Song
+var audioElement = document.createElement("audio");
+audioElement.setAttribute("src", audioSrcs[0]);
+
+// Theme Button
+$("#playBtn").on("click", function () {
+  audioElement.play();
+});
+$("#pauseBtn").on("click", function () {
+  audioElement.pause();
 });
