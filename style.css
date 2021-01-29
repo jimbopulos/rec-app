@@ -10,6 +10,10 @@ body {
   background-image: url("https://wallpapercave.com/wp/wp4546211.jpg");
 }
 
+.menu {
+  background-color: white !important;
+}
+
 /* body::before {
   content: "";
   background-size: cover;
