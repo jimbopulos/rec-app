@@ -1,4 +1,11 @@
 $(document).ready(function () {
+  //calling the owl carousel function to initiate the function
+  var recOwlCarousel;
+  function recOwlCarouselStart() {
+    recOwlCarousel = $(".owl-carousel").owlCarousel();
+  }
+  recOwlCarouselStart();
+
   function searchUnsplash(searchWord) {
     var accessKey = "b1W5pXpGOuFqfBJJ14knI39Pa1u0UR9AJbqaZUcFJsA";
     var unsplashUrl = `https://api.unsplash.com/search/photos/?query=${searchWord}&client_id=${accessKey}`;
@@ -13,8 +20,12 @@ $(document).ready(function () {
         var resultsUrl = result.urls.small;
         return `<img src='${resultsUrl}'>`;
       });
-      //
-      $("#carousel").html(images);
+      //this is necessary to allow for the new carousel to deploy
+      recOwlCarousel.trigger("destroy.owl.carousel");
+      //sending images to the html(carousel not implemented yet)
+      $(".owl-carousel").html(images);
+      //to trigger a refresh of the carousel (implementing the carousel with the new images coming from the API) https://stackoverflow.com/questions/32347919/refreshing-owl-carousel-2
+      recOwlCarouselStart();
     });
   }
 
