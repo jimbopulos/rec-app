@@ -10,6 +10,22 @@ body {
   background-image: url("https://wallpapercave.com/wp/wp4546211.jpg");
 }
 
+.menu {
+  background-color: white !important;
+}
+
+.categoryBtn {
+  background-color: #84e795 !important;
+}
+
+.footer {
+  position: fixed;
+  bottom: -14px;
+  margin: auto;
+  width: 102%;
+  background-color: white !important;
+}
+
 /* body::before {
   content: "";
   background-size: cover;
