@@ -13,7 +13,7 @@ $(document).ready(function () {
         var resultsUrl = result.urls.small;
         return `<img src='${resultsUrl}'>`;
       });
-      //re
+      //
       $("#carousel").html(images);
     });
   }
@@ -48,23 +48,24 @@ $(document).ready(function () {
     if (!results[2]) return "";
     return decodeURIComponent(results[2].replace(/\+/g, " "));
   }
+
   var id = getParameterByName("id");
 
   $("#category").text(id);
   searchUnsplash(id);
-});
 
-// Audio Functions ===================================
-let audioSrcs = ["./Audio/Mood.mp3"];
+  // Audio Functions ===================================
+  let audioSrcs = ["./Audio/Mood.mp3"];
 
-// Gets Link for Theme Song
-var audioElement = document.createElement("audio");
-audioElement.setAttribute("src", audioSrcs[0]);
+  // Gets Link for Theme Song
+  var audioElement = document.createElement("audio");
+  audioElement.setAttribute("src", audioSrcs[0]);
 
-// Theme Button
-$("#playBtn").on("click", function () {
-  audioElement.play();
-});
-$("#pauseBtn").on("click", function () {
-  audioElement.pause();
+  // Theme Button
+  $("#playBtn").on("click", function () {
+    audioElement.play();
+  });
+  $("#pauseBtn").on("click", function () {
+    audioElement.pause();
+  });
 });
