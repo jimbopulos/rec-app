@@ -46,43 +46,43 @@ let fitnessArr = [
 let choresArr = [
   {
     artist: "Bachman-Turner Overdrive",
-    song: "Taking_Care_Of_Business",
+    song: "./Audio/chores/Taking_Care_Of_Business.mp3",
   },
   {
     artist: "Blondie",
-    song: "One_Way_Or_Another",
+    song: "./Audio/chores/One_Way_Or_Another.mp3",
   },
   {
     artist: "Courtney Barnett",
-    song: "Over_Everything",
+    song: "./Audio/chores/Over_Everything.mp3",
   },
   {
     artist: "Soft Cell",
-    song: "Tainted_Love",
+    song: "./Audio/chores/Tainted_Love.mp3",
   },
   {
     artist: "Eurythmics",
-    song: "Sweet_Dreams",
+    song: "./Audio/chores/Sweet_Dreams.mp3",
   },
   {
     artist: "Natasha Bedingfield",
-    song: "Unwritten",
+    song: "./Audio/chores/Unwritten.mp3",
   },
   {
     artist: "M.I.A.",
-    song: "",
+    song: "./Audio/chores/Paper_Planes.mp3",
   },
   {
     artist: "Beyonce",
-    song: "",
+    song: "./Audio/chores/Love_On_Top.mp3",
   },
   {
     artist: "Kanye West",
-    song: "",
+    song: "./Audio/chores/Through_The_Wire.mp3",
   },
   {
-    artist: "Sean Kingston",
-    song: "",
+    artist: "B.o.B.",
+    song: "./Audio/chores/Nothin_On_You.mp3",
   },
 ];
 
@@ -259,7 +259,7 @@ let danceArr = [
 ];
 
 // Audio Functions ===================================
-let audioFitness = fitnessArr[0].song;
+let audioArrays = [fitnessArr[0].song, choresArr[0].song];
 
 function randomChoice() {
   choice = Math.floor(Math.random() * 10);
@@ -268,7 +268,7 @@ function randomChoice() {
 
 // Gets Link for Theme Song
 var audioElement = document.createElement("audio");
-audioElement.setAttribute("src", audioFitness);
+audioElement.setAttribute("src", audioArrays[1]);
 
 // Play/Pause Buttons
 $("#playBtn").on("click", function () {
