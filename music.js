@@ -183,35 +183,35 @@ let readArray = [
   },
   {
     artist: "Satie",
-    song: "Gymnopedie no. 1",
+    song: "./Audio/read/Gymnopedie.mp3",
   },
   {
     artist: "Elgar",
-    song: "",
+    song: "./Audio/read/Salut.mp3",
   },
   {
     artist: "Grieg",
-    song: "",
+    song: "./Audio/read/Peace_of_the_Woods.mp3",
   },
   {
     artist: "Schumann",
-    song: "",
+    song: "./Audio/read/Traumerei.mp3",
   },
   {
     artist: "Vivaldi",
-    song: "",
+    song: "./Audio/read/La_Stravaganza.mp3",
   },
   {
     artist: "Pablo Nouvelle",
-    song: "",
+    song: "./Audio/read/Milambi.mp3",
   },
   {
     artist: "Ryuichi Sakamoto",
-    song: "Merry Christmas Mr. Lawrence",
+    song: "./Audio/read/Mr_Lawrence.mp3",
   },
   {
     artist: "Ravel",
-    song: "",
+    song: "./Audio/read/Pavane.mp3",
   },
 ];
 
@@ -264,7 +264,7 @@ let audioArrays = [
   choresArr[0].song,
   studyArr[0].song,
   calmArr[0].song,
-  readArray[0].song,
+  readArray[8].song,
   danceArr[0].song,
 ];
 
@@ -278,7 +278,7 @@ randomChoice();
 
 // Gets Link for Theme Song
 var audioElement = document.createElement("audio");
-audioElement.setAttribute("src", audioArrays[3]);
+audioElement.setAttribute("src", audioArrays[4]);
 
 // Play/Pause Buttons
 $("#playBtn").on("click", function () {
