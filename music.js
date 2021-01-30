@@ -89,43 +89,43 @@ let choresArr = [
 let studyArr = [
   {
     artist: "Mozart",
-    song: "",
+    song: "./Audio/study/Lacrimosa.mp3",
   },
   {
     artist: "Bach",
-    song: "",
+    song: "./Audio/study/Air.mp3",
   },
   {
     artist: "Scriabin",
-    song: "",
+    song: "./Audio/study/Etudes.mp3",
   },
   {
     artist: "J Dilla",
-    song: "",
+    song: "./Audio/study/Wont_Do.mp3",
   },
   {
     artist: "Hadyn",
-    song: "",
+    song: "./Audio/study/Surprise.mp3",
   },
   {
     artist: "Beethoven",
-    song: "",
+    song: "./Audio/study/Moonlight.mp3",
   },
   {
     artist: "Chopin",
-    song: "",
+    song: "./Audio/study/Nocturne.mp3",
   },
   {
     artist: "Tchaikovsky",
-    song: "",
+    song: "./Audio/study/Valse.mp3",
   },
   {
     artist: "Stravinsky",
-    song: "",
+    song: "./Audio/study/Waltz.mp3",
   },
   {
     artist: "Mussorgsky",
-    song: "",
+    song: "./Audio/study/A_Tear.mp3",
   },
 ];
 
@@ -259,16 +259,26 @@ let danceArr = [
 ];
 
 // Audio Functions ===================================
-let audioArrays = [fitnessArr[0].song, choresArr[0].song];
+let audioArrays = [
+  fitnessArr[0].song,
+  choresArr[0].song,
+  studyArr[0].song,
+  calmArr[0].song,
+  readArray[0].song,
+  danceArr[0].song,
+];
 
 function randomChoice() {
   choice = Math.floor(Math.random() * 10);
+  console.log("Random Choice: ", choice);
   return choice;
 }
 
+randomChoice();
+
 // Gets Link for Theme Song
 var audioElement = document.createElement("audio");
-audioElement.setAttribute("src", audioArrays[1]);
+audioElement.setAttribute("src", audioArrays[2]);
 
 // Play/Pause Buttons
 $("#playBtn").on("click", function () {
