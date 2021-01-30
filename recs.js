@@ -292,15 +292,9 @@ $(document).ready(function () {
   }
   recOwlCarouselStart();
 
-  //function to generate additional images -random (https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range)
-  function getRandomPageNumber(min, max) {
-    return Math.floor(Math.random() * (max - min) + min);
-  }
-
   function searchUnsplash(searchWord) {
     var accessKey = "b1W5pXpGOuFqfBJJ14knI39Pa1u0UR9AJbqaZUcFJsA";
-    var pageNumber = getRandomPageNumber(1, 10);
-    var unsplashUrl = `https://api.unsplash.com/search/photos/?query=${searchWord}&page=${pageNumber}&client_id=${accessKey}`;
+    var unsplashUrl = `https://api.unsplash.com/search/photos/?query=${searchWord}&client_id=${accessKey}`;
 
     $.ajax({
       url: unsplashUrl,
