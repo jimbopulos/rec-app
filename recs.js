@@ -255,6 +255,37 @@ let fitnessArr =
   
 
 $(document).ready(function () {
+  //calling the owl carousel function to initiate the function. Found these options here https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html
+  var recOwlCarousel;
+  function recOwlCarouselStart() {
+    recOwlCarousel = $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true,
+        },
+        600: {
+          items: 2,
+          nav: false,
+        },
+        1000: {
+          items: 3,
+          nav: true,
+          loop: true,
+        },
+      },
+      center: true,
+      nav: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      autoplayTimeout: 2000,
+    });
+  }
+  recOwlCarouselStart();
+
   function searchUnsplash(searchWord) {
     var accessKey = "b1W5pXpGOuFqfBJJ14knI39Pa1u0UR9AJbqaZUcFJsA";
     var unsplashUrl = `https://api.unsplash.com/search/photos/?query=${searchWord}&client_id=${accessKey}`;
@@ -267,10 +298,14 @@ $(document).ready(function () {
       //map returns array of image elements
       var images = response.results.map(function (result) {
         var resultsUrl = result.urls.small;
-        return `<img src='${resultsUrl}'>`;
+        return `<div class="carouselCard"><img class="carouselImg" src='${resultsUrl}'></div>`;
       });
-      //re
-      $("#carousel").html(images);
+      //this is necessary to allow for the new carousel to deploy
+      recOwlCarousel.trigger("destroy.owl.carousel");
+      //sending images to the html(carousel not implemented yet)
+      $(".owl-carousel").html(images);
+      //to trigger a refresh of the carousel (implementing the carousel with the new images coming from the API) https://stackoverflow.com/questions/32347919/refreshing-owl-carousel-2
+      recOwlCarouselStart();
     });
   }
 
@@ -304,11 +339,27 @@ $(document).ready(function () {
     if (!results[2]) return "";
     return decodeURIComponent(results[2].replace(/\+/g, " "));
   }
+
   var id = getParameterByName("id");
 
   $("#category").text(id);
   searchUnsplash(id);
-});
+
+
+  // Audio Functions ===================================
+  let audioSrcs = ["./Audio/Mood.mp3"];
+
+  // Gets Link for Theme Song
+  var audioElement = document.createElement("audio");
+  audioElement.setAttribute("src", audioSrcs[0]);
+
+  // Theme Button
+  $("#playBtn").on("click", function () {
+    audioElement.play();
+  });
+  $("#pauseBtn").on("click", function () {
+    audioElement.pause();
+  });
 
 // Audio Functions ===================================
 let audioFitness = ["./Audio/Mood.mp3"];
