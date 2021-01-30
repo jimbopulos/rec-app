@@ -218,43 +218,43 @@ let readArray = [
 let danceArr = [
   {
     artist: "Calvin Harris",
-    song: "",
+    song: "./Audio/dance/Over_Now.mp3",
   },
   {
     artist: "Celia Cruz",
-    song: "Azucar",
+    song: "./Audio/dance/Azucar.mp3",
   },
   {
     artist: "Elvis Crespo",
-    song: "Suavmente",
+    song: "./Audio/dance/Suavmente.mp3",
   },
   {
     artist: "KAYTRANADA",
-    song: "LITE SPOTS",
+    song: "./Audio/dance/Lite_Spots.mp3",
   },
   {
     artist: "Daft Punk",
-    song: "",
+    song: "./Audio/dance/One_More_Time.mp3",
   },
   {
     artist: "Disclosure",
-    song: "",
+    song: "./Audio/dance/Watch_Your_Step.mp3",
   },
   {
     artist: "Dua Lipa",
-    song: "",
+    song: "./Audio/dance/Break_My_Heart.mp3",
   },
   {
     artist: "Oliver Heldens",
-    song: "",
+    song: "./Audio/dance/Take_A_Chance.mp3",
   },
   {
-    artist: "Mark Ronson",
-    song: "",
+    artist: "24kGoldn",
+    song: "./Audio/dance/Mood.mp3",
   },
   {
     artist: "Major Lazer",
-    song: "",
+    song: "./Audio/dance/Thunder_and_Lightning.mp3",
   },
 ];
 
@@ -265,7 +265,7 @@ let audioArrays = [
   studyArr[0].song,
   calmArr[0].song,
   readArray[8].song,
-  danceArr[0].song,
+  danceArr[8].song,
 ];
 
 function randomChoice() {
@@ -278,7 +278,7 @@ randomChoice();
 
 // Gets Link for Theme Song
 var audioElement = document.createElement("audio");
-audioElement.setAttribute("src", audioArrays[4]);
+audioElement.setAttribute("src", audioArrays[5]);
 
 // Play/Pause Buttons
 $("#playBtn").on("click", function () {
