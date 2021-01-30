@@ -26,4 +26,21 @@ $(document).ready(function () {
       // searchUnsplash(id);
     });
   }
+  //make the random button make a random selection of category that will open in another page.
+  //choose a random category
+  function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+  $("#random").on("click", function () {
+    let allIds = [];
+    //get all the categories -iterate
+    $(".categoryBtn").each(function (index, element) {
+      let id = $(element).attr("id");
+      allIds.push(id);
+    });
+    console.log(allIds);
+    let randomIndex = getRandomNumber(0, allIds.length - 1);
+    //redirect to third screen
+    window.location.href = `recs.html?id=${allIds[randomIndex]}`;
+  });
 });
