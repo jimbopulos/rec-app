@@ -311,13 +311,18 @@ $(document).ready(function () {
 });
 
 // Audio Functions ===================================
-let audioSrcs = ["./Audio/Mood.mp3"];
+let audioFitness = ["./Audio/Mood.mp3"];
+
+function randomChoice() {
+  choice = Math.floor(Math.random() * 10);
+  return choice;
+}
 
 // Gets Link for Theme Song
 var audioElement = document.createElement("audio");
-audioElement.setAttribute("src", audioSrcs[0]);
+audioElement.setAttribute("src", audioFitness[0]);
 
-// Theme Button
+// Play/Pause Buttons
 $("#playBtn").on("click", function () {
   audioElement.play();
 });
