@@ -1,3 +1,259 @@
+// DEPENDENCIES
+
+// Arrays for artist’s based on category selection
+let fitnessArr = 
+  [{
+    artist: 'MEDUZA',
+    song: 'Lose Control'
+  },
+  {
+    artist: 'Diplo',
+    song: ''
+  },
+  {
+    artist: 'Kendrick Lamar',
+    song: ''
+  },
+  {
+    artist: 'Pitbull',
+    song: ''
+  },
+  {
+    artist: '50 Cent',
+    song: ''
+  },
+  {
+    artist: 'Eminem',
+    song: ''
+  },
+  {
+    artist: 'ABBA',
+    song: ''
+  },
+  {
+    artist: 'David Guetta',
+    song: ''
+  },
+  {
+    artist: 'Michael Jackson',
+    song: ''
+  },
+  {
+    artist: 'Technotronic',
+    song: 'Pump Up the Jam'
+  }]
+  
+  let choresArr = 
+  [{
+    artist: 'Bachman-Turner Overdrive',
+    song: 'Taking Care Of Business'
+  },
+  {
+    artist: 'Blondie',
+    song: 'One Way Or Another'
+  },
+  {
+    artist: 'Courtney Barnett',
+    song: ''
+  },
+  {
+    artist: 'Soft Cell',
+    song: 'Tainted Love'
+  },
+  {
+    artist: 'Eurythmics',
+    song: 'Sweet Dreams'
+  },
+  {
+    artist: 'Natasha Bedingfield',
+    song: 'Unwritten'
+  },
+  {
+    artist: 'M.I.A.',
+    song: ''
+  },
+  {
+    artist: 'Beyonce',
+    song: ''
+  },
+  {
+    artist: 'Kanye West',
+    song: ''
+  },
+  {
+    artist: 'Sean Kingston',
+    song: ''
+  }]
+  
+  let studyArr = 
+  [{
+    artist: 'Mozart',
+    song: ''
+  },
+  {
+    artist: 'Bach',
+    song: ''
+  },
+  {
+    artist: 'Scriabin',
+    song: ''
+  },
+  {
+    artist: 'J Dilla',
+    song: ''
+  },
+  {
+    artist: 'Hadyn',
+    song: ''
+  },
+  {
+    artist: 'Beethoven',
+    song: ''
+  },
+  {
+    artist: 'Chopin',
+    song: ''
+  },
+  {
+    artist: 'Tchaikovsky',
+    song: ''
+  },
+  {
+    artist: 'Stravinsky',
+    song: ''
+  },
+  {
+    artist: 'Mussorgsky',
+    song: ''
+  }]
+  
+  let calmArr = 
+  [{
+    artist: 'Brian Eno',
+    song: ''
+  },
+  {
+    artist: 'Jan Jelinek',
+    song: ''
+  },
+  {
+    artist: 'Duke Ellington',
+    song: 'In a Sentimental Mood'
+  },
+  {
+    artist: 'Bill Evans',
+    song: 'Nardis'
+  },
+  {
+    artist: 'Vince Guaraldi',
+    song: ''
+  },
+  {
+    artist: 'Debussy',
+    song: 'Clair de Lune'
+  },
+  {
+    artist: 'Frank Ocean',
+    song: ''
+  },
+  {
+    artist: 'J Dilla',
+    song: ''
+  },
+  {
+    artist: 'Pink Floyd',
+    song: 'Us and Them'
+  },
+  {
+    artist: 'Bob Marley',
+    song: 'Jamming'
+  }]
+  
+  let readArray = 
+  [{
+    artist: 'Chopin',
+    song: ''
+  },
+  {
+    artist: 'Debussy',
+    song: ''
+  },
+  {
+    artist: 'Satie',
+    song: 'Gymnopedie no. 1'
+  },
+  {
+    artist: 'Elgar',
+    song: ''
+  },
+  {
+    artist: 'Grieg',
+    song: ''
+  },
+  {
+    artist: 'Schumann',
+    song: ''
+  },
+  {
+    artist: 'Vivaldi',
+    song: ''
+  },
+  {
+    artist: 'Pablo Nouvelle',
+    song: ''
+  },
+  {
+    artist: 'Ryuichi Sakamoto',
+    song: 'Merry Christmas Mr. Lawrence'
+  },
+  {
+    artist: 'Ravel',
+    song: ''
+  }]
+
+  let danceArr = 
+  [{
+    artist: 'Calvin Harris',
+    song: ''
+  },
+  {
+    artist: 'Celia Cruz',
+    song: 'Azucar'    
+  },
+  {
+    artist: 'Elvis Crespo',
+    song: 'Suavmente'
+  },
+  {
+    artist: 'KAYTRANADA',
+    song: 'LITE SPOTS'
+  },
+  {
+    artist: 'Daft Punk',
+    song: ''
+  },
+  {
+    artist: 'Disclosure',
+    song: ''
+  },
+  {
+    artist: 'Dua Lipa',
+    song: ''
+  },
+  {
+    artist: 'Oliver Heldens',
+    song: ''
+  },
+  {
+    artist: 'Mark Ronson',
+    song: ''
+  },
+  {
+    artist: 'Major Lazer',
+    song: ''
+  }]
+  
+
 $(document).ready(function () {
   function searchUnsplash(searchWord) {
     var accessKey = "b1W5pXpGOuFqfBJJ14knI39Pa1u0UR9AJbqaZUcFJsA";
