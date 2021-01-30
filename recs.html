@@ -18,7 +18,23 @@
     />
     <!-- link to style.css  -->
     <link rel="stylesheet" href="style.css" />
+
+
+
+    <!-- Links from Owl Carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+
+
+
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+     <!-- link to jquery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+     <!-- Link from owl javascript -->
+<script src="owlcarousel/owl.carousel.min.js"></script>
   </head>
+  <!-- ********** BODY START *********** -->
   <body>
     <!-- navbar -->
     <nav class="ui secondary pointing menu">
@@ -28,13 +44,16 @@
       </div>
     </nav>
 
-
     <div class="main">
       <h1>Get Rec'd</h1>
       <!-- carrousel start  -->
-      <!-- this h2 will be removed-it's just for coding visuals -->
-      
       <div id="category"></div>
+
+      <div class="owl-carousel">
+        
+      </div>
+      <!-- carrousel end  -->
+    
       <div id="carousel"></div>
 
       <!-- populate area with music info - list of generated artists' albums-->
@@ -68,8 +87,7 @@
         <a class="ui item"><i class="fas fa-home"></i></a>
       </div>
     </div>
-    <!-- link to jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- script for semantic framework -->
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <!-- link to js file -->
