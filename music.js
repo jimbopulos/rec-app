@@ -259,26 +259,27 @@ let danceArr = [
 ];
 
 // Audio Functions ===================================
+let choice = 0;
+
+randomChoice();
+
 let audioArrays = [
-  fitnessArr[0].song,
-  choresArr[0].song,
-  studyArr[0].song,
-  calmArr[0].song,
-  readArray[8].song,
-  danceArr[8].song,
+  fitnessArr[choice].song,
+  choresArr[choice].song,
+  studyArr[choice].song,
+  calmArr[choice].song,
+  readArray[choice].song,
+  danceArr[choice].song,
 ];
 
 function randomChoice() {
   choice = Math.floor(Math.random() * 10);
-  console.log("Random Choice: ", choice);
   return choice;
 }
 
-randomChoice();
-
 // Gets Link for Theme Song
 var audioElement = document.createElement("audio");
-audioElement.setAttribute("src", audioArrays[5]);
+audioElement.setAttribute("src", audioArrays[0]);
 
 // Play/Pause Buttons
 $("#playBtn").on("click", function () {
