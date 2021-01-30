@@ -46,23 +46,23 @@ let fitnessArr = [
 let choresArr = [
   {
     artist: "Bachman-Turner Overdrive",
-    song: "Taking Care Of Business",
+    song: "Taking_Care_Of_Business",
   },
   {
     artist: "Blondie",
-    song: "One Way Or Another",
+    song: "One_Way_Or_Another",
   },
   {
     artist: "Courtney Barnett",
-    song: "",
+    song: "Over_Everything",
   },
   {
     artist: "Soft Cell",
-    song: "Tainted Love",
+    song: "Tainted_Love",
   },
   {
     artist: "Eurythmics",
-    song: "Sweet Dreams",
+    song: "Sweet_Dreams",
   },
   {
     artist: "Natasha Bedingfield",
