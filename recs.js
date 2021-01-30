@@ -1,6 +1,7 @@
 // DEPENDENCIES
 
 // Arrays for artist’s based on category selection
+
 let fitnessArr = 
   [{
     artist: 'MEDUZA',
@@ -252,7 +253,6 @@ let fitnessArr =
     artist: 'Major Lazer',
     song: ''
   }]
-  
 
 $(document).ready(function () {
   //calling the owl carousel function to initiate the function. Found these options here https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html
@@ -380,3 +380,4 @@ $("#playBtn").on("click", function () {
 $("#pauseBtn").on("click", function () {
   audioElement.pause();
 });
+})
