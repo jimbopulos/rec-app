@@ -1,8 +1,32 @@
 $(document).ready(function () {
-  //calling the owl carousel function to initiate the function
+  //calling the owl carousel function to initiate the function. Found these options here https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html
   var recOwlCarousel;
   function recOwlCarouselStart() {
-    recOwlCarousel = $(".owl-carousel").owlCarousel();
+    recOwlCarousel = $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true,
+        },
+        600: {
+          items: 2,
+          nav: false,
+        },
+        1000: {
+          items: 3,
+          nav: true,
+          loop: true,
+        },
+      },
+      center: true,
+      nav: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      autoplayTimeout: 2000,
+    });
   }
   recOwlCarouselStart();
 
@@ -18,7 +42,7 @@ $(document).ready(function () {
       //map returns array of image elements
       var images = response.results.map(function (result) {
         var resultsUrl = result.urls.small;
-        return `<img src='${resultsUrl}'>`;
+        return `<div class="carouselCard"><img class="carouselImg" src='${resultsUrl}'></div>`;
       });
       //this is necessary to allow for the new carousel to deploy
       recOwlCarousel.trigger("destroy.owl.carousel");
