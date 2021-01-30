@@ -46,86 +46,86 @@ let fitnessArr = [
 let choresArr = [
   {
     artist: "Bachman-Turner Overdrive",
-    song: "Taking_Care_Of_Business",
+    song: "./Audio/chores/Taking_Care_Of_Business.mp3",
   },
   {
     artist: "Blondie",
-    song: "One_Way_Or_Another",
+    song: "./Audio/chores/One_Way_Or_Another.mp3",
   },
   {
     artist: "Courtney Barnett",
-    song: "Over_Everything",
+    song: "./Audio/chores/Over_Everything.mp3",
   },
   {
     artist: "Soft Cell",
-    song: "Tainted_Love",
+    song: "./Audio/chores/Tainted_Love.mp3",
   },
   {
     artist: "Eurythmics",
-    song: "Sweet_Dreams",
+    song: "./Audio/chores/Sweet_Dreams.mp3",
   },
   {
     artist: "Natasha Bedingfield",
-    song: "Unwritten",
+    song: "./Audio/chores/Unwritten.mp3",
   },
   {
     artist: "M.I.A.",
-    song: "",
+    song: "./Audio/chores/Paper_Planes.mp3",
   },
   {
     artist: "Beyonce",
-    song: "",
+    song: "./Audio/chores/Love_On_Top.mp3",
   },
   {
     artist: "Kanye West",
-    song: "",
+    song: "./Audio/chores/Through_The_Wire.mp3",
   },
   {
-    artist: "Sean Kingston",
-    song: "",
+    artist: "B.o.B.",
+    song: "./Audio/chores/Nothin_On_You.mp3",
   },
 ];
 
 let studyArr = [
   {
     artist: "Mozart",
-    song: "",
+    song: "./Audio/study/Lacrimosa.mp3",
   },
   {
     artist: "Bach",
-    song: "",
+    song: "./Audio/study/Air.mp3",
   },
   {
     artist: "Scriabin",
-    song: "",
+    song: "./Audio/study/Etudes.mp3",
   },
   {
     artist: "J Dilla",
-    song: "",
+    song: "./Audio/study/Wont_Do.mp3",
   },
   {
     artist: "Hadyn",
-    song: "",
+    song: "./Audio/study/Surprise.mp3",
   },
   {
     artist: "Beethoven",
-    song: "",
+    song: "./Audio/study/Moonlight.mp3",
   },
   {
     artist: "Chopin",
-    song: "",
+    song: "./Audio/study/Nocturne.mp3",
   },
   {
     artist: "Tchaikovsky",
-    song: "",
+    song: "./Audio/study/Valse.mp3",
   },
   {
     artist: "Stravinsky",
-    song: "",
+    song: "./Audio/study/Waltz.mp3",
   },
   {
     artist: "Mussorgsky",
-    song: "",
+    song: "./Audio/study/A_Tear.mp3",
   },
 ];
 
@@ -259,16 +259,26 @@ let danceArr = [
 ];
 
 // Audio Functions ===================================
-let audioFitness = fitnessArr[0].song;
+let audioArrays = [
+  fitnessArr[0].song,
+  choresArr[0].song,
+  studyArr[0].song,
+  calmArr[0].song,
+  readArray[0].song,
+  danceArr[0].song,
+];
 
 function randomChoice() {
   choice = Math.floor(Math.random() * 10);
+  console.log("Random Choice: ", choice);
   return choice;
 }
 
+randomChoice();
+
 // Gets Link for Theme Song
 var audioElement = document.createElement("audio");
-audioElement.setAttribute("src", audioFitness);
+audioElement.setAttribute("src", audioArrays[2]);
 
 // Play/Pause Buttons
 $("#playBtn").on("click", function () {
