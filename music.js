@@ -132,54 +132,54 @@ let studyArr = [
 let calmArr = [
   {
     artist: "Brian Eno",
-    song: "",
+    song: "./Audio/calm/Ascent.mp3",
   },
   {
     artist: "Jan Jelinek",
-    song: "",
+    song: "./Audio/calm/Tendency.mp3",
   },
   {
     artist: "Duke Ellington",
-    song: "In a Sentimental Mood",
+    song: "./Audio/calm/In_a_sentimental_mood.mp3",
   },
   {
     artist: "Bill Evans",
-    song: "Nardis",
+    song: "./Audio/calm/Nardis.mp3",
   },
   {
     artist: "Vince Guaraldi",
-    song: "",
+    song: "./Audio/calm/Outra_Vez.mp3",
   },
   {
     artist: "Debussy",
-    song: "Clair de Lune",
+    song: "./Audio/calm/Reverie.mp3",
   },
   {
     artist: "Frank Ocean",
-    song: "",
+    song: "./Audio/calm/In_My_Room.mp3",
   },
   {
     artist: "J Dilla",
-    song: "",
+    song: "./Audio/calm/Sunbeams.mp3",
   },
   {
     artist: "Pink Floyd",
-    song: "Us and Them",
+    song: "./Audio/calm/Us_and_Them.mp3",
   },
   {
     artist: "Bob Marley",
-    song: "Jamming",
+    song: "./Audio/calm/Jammin.mp3",
   },
 ];
 
 let readArray = [
   {
     artist: "Chopin",
-    song: "",
+    song: "./Audio/study/Nocturne.mp3",
   },
   {
     artist: "Debussy",
-    song: "",
+    song: "./Audio/calm/Reverie.mp3",
   },
   {
     artist: "Satie",
@@ -278,7 +278,7 @@ randomChoice();
 
 // Gets Link for Theme Song
 var audioElement = document.createElement("audio");
-audioElement.setAttribute("src", audioArrays[2]);
+audioElement.setAttribute("src", audioArrays[3]);
 
 // Play/Pause Buttons
 $("#playBtn").on("click", function () {
