@@ -1,4 +1,8 @@
-// Arrays for artist’s based on category selection
+// DEPENDENCIES ============================
+// let categBtns = $(".categoryBtn");
+// console.log("Data-Value: ", categBtns.attr("data-value"));
+
+// STARTING VALUES =========================
 
 let fitnessArr = [
   {
@@ -258,9 +262,9 @@ let danceArr = [
   },
 ];
 
-// Audio Functions ===================================
 let choice = 0;
 
+// Set choice to a random number and picking a random song from the array
 randomChoice();
 
 let audioArrays = [
@@ -276,6 +280,11 @@ function randomChoice() {
   choice = Math.floor(Math.random() * 10);
   return choice;
 }
+
+// USER INTERACTIONS =======================
+// $(".categoryBtn").click(function () {
+//   console.log("Data-Value: ", $(this).data("value"));
+// });
 
 // Gets Link for Theme Song
 var audioElement = document.createElement("audio");
