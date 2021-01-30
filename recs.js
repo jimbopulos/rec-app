@@ -32,7 +32,8 @@ $(document).ready(function () {
 
   function searchUnsplash(searchWord) {
     var accessKey = "b1W5pXpGOuFqfBJJ14knI39Pa1u0UR9AJbqaZUcFJsA";
-    var unsplashUrl = `https://api.unsplash.com/search/photos/?query=${searchWord}&client_id=${accessKey}`;
+    var pageNumber = getRandomPageNumber(1, 10);
+    var unsplashUrl = `https://api.unsplash.com/search/photos/?query=${searchWord}&page=${pageNumber}&client_id=${accessKey}`;
 
     $.ajax({
       url: unsplashUrl,
@@ -51,6 +52,10 @@ $(document).ready(function () {
       //to trigger a refresh of the carousel (implementing the carousel with the new images coming from the API) https://stackoverflow.com/questions/32347919/refreshing-owl-carousel-2
       recOwlCarouselStart();
     });
+  }
+  //function to generate additional images -random (https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range)
+  function getRandomPageNumber(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
   }
 
   // AJAX request for TheAudioDB
