@@ -89,6 +89,7 @@ $(document).ready(function () {
   $("#category").text(id);
   searchUnsplash(id);
 
+
   // Audio Functions ===================================
   let audioSrcs = ["./Audio/Mood.mp3"];
 
@@ -103,4 +104,23 @@ $(document).ready(function () {
   $("#pauseBtn").on("click", function () {
     audioElement.pause();
   });
+
+// Audio Functions ===================================
+let audioFitness = ["./Audio/Mood.mp3"];
+
+function randomChoice() {
+  choice = Math.floor(Math.random() * 10);
+  return choice;
+}
+
+// Gets Link for Theme Song
+var audioElement = document.createElement("audio");
+audioElement.setAttribute("src", audioFitness[0]);
+
+// Play/Pause Buttons
+$("#playBtn").on("click", function () {
+  audioElement.play();
+});
+$("#pauseBtn").on("click", function () {
+  audioElement.pause();
 });
