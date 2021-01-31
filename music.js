@@ -301,9 +301,6 @@ function searchAudioDB() {
     },
   };
   $.ajax(settings).done(function (response) {
-    console.log("Discography:", response);
-    console.log("Artist:", choice);
-    console.log(response.album[0]);
     // loop through discog div
     response.album.forEach(function (element) {
       // create div for album info
@@ -314,9 +311,11 @@ function searchAudioDB() {
       // append to discog section
       $("#discog").append(albumInfoDiv);
     });
+    $('.album-info').prepend(`Artist: ${audioArrays[arrayChoice].artist}`);
   });
 }
 searchAudioDB();
+
 
 // USER INTERACTIONS =======================
 $(".categoryBtn").click(function () {
