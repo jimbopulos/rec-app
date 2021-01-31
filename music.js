@@ -269,22 +269,12 @@ let arrayChoice = 0;
 randomChoice();
 
 let audioArrays = [
-  fitnessArr[choice].song,
-  choresArr[choice].song,
-  studyArr[choice].song,
-  calmArr[choice].song,
-  readArray[choice].song,
-  danceArr[choice].song,
-];
-
-// array for artists by random choice
-let artistOutput = [
-  fitnessArr[choice].artist,
-  choresArr[choice].artist,
-  studyArr[choice].artist,
-  calmArr[choice].artist,
-  readArray[choice].artist,
-  danceArr[choice].artist,
+  fitnessArr[choice],
+  choresArr[choice],
+  studyArr[choice],
+  calmArr[choice],
+  readArray[choice],
+  danceArr[choice],
 ];
 
 function randomChoice() {
@@ -295,6 +285,26 @@ function randomChoice() {
 function searchAudioDB() {
   var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${fitnessArr[choice].artist}`;
 
+<<<<<<< HEAD
+  const settings = {
+    async: true,
+    crossDomain: true,
+    url: audioDBUrl,
+    method: "GET",
+    headers: {
+      "x-rapidapi-key": "164d50a740msh07c5f9842e61e21p12b55ajsn9f08d461916f",
+      "x-rapidapi-host": "theaudiodb.p.rapidapi.com",
+    },
+  };
+  $.ajax(settings).done(function (response) {
+    console.log("Discography:", response);
+    console.log("Artist:", choice);
+    // create div for album info
+    // let albumInfoDiv = $('<div>').addClass('album-info');
+    // // append to discog section
+    // $('#discog').append(albumInfoDiv);
+  });
+=======
 const settings = {
 async: true,
 crossDomain: true,
@@ -320,6 +330,7 @@ response.album.forEach(function (element) {
     $('#discog').append(albumInfoDiv);
   })
 });
+>>>>>>> main
 }
 searchAudioDB();
 
@@ -337,8 +348,8 @@ $(".categoryBtn").click(function () {
 });
 
 // Gets Link for Song
-var audioElement = document.createElement("audio");
-audioElement.setAttribute("src", audioArrays[arrayChoice]);
+let audioElement = document.createElement("audio");
+audioElement.setAttribute("src", audioArrays[arrayChoice].song);
 
 // Play/Pause Buttons
 $("#playBtn").on("click", function () {
