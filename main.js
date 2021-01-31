@@ -26,7 +26,7 @@ $(document).ready(function () {
       // searchUnsplash(id);
     });
   }
-  //make the random button make a random selection of category that will open in another page.
+  //when button clicked make a random image selection of category that will open in another page.
   //choose a random category
   function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
@@ -42,6 +42,8 @@ $(document).ready(function () {
     let randomIndex = getRandomNumber(0, allIds.length - 1);
     //redirect to third screen
     window.location.href = `recs.html?id=${allIds[randomIndex]}`;
+      // ##############################################
+      // **** END OF IMAGES CODE *****
 
     audioElement.setAttribute("src", audioArrays[randomIndex].song);
 
