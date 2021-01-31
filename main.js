@@ -42,8 +42,8 @@ $(document).ready(function () {
     let randomIndex = getRandomNumber(0, allIds.length - 1);
     //redirect to third screen
     window.location.href = `recs.html?id=${allIds[randomIndex]}`;
-      // ##############################################
-      // **** END OF IMAGES CODE *****
+    // ##############################################
+    // **** END OF IMAGES CODE *****
 
     audioElement.setAttribute("src", audioArrays[randomIndex].song);
 
