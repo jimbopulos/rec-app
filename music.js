@@ -263,6 +263,7 @@ let danceArr = [
 ];
 
 let choice = 0;
+let btnVal = 0;
 
 // Set choice to a random number and picking a random song from the array
 randomChoice();
@@ -282,13 +283,17 @@ function randomChoice() {
 }
 
 // USER INTERACTIONS =======================
-// $(".categoryBtn").click(function () {
-//   console.log("Data-Value: ", $(this).data("value"));
-// });
+$(".categoryBtn").click(function () {
+  btnVal = $(this).data("value");
+  console.log("Data-Value: ", btnVal);
+});
+
+console.log("Btn Val: ", btnVal);
+console.log("Array Picked: ", audioArrays[btnVal]);
 
 // Gets Link for Theme Song
 var audioElement = document.createElement("audio");
-audioElement.setAttribute("src", audioArrays[0]);
+audioElement.setAttribute("src", audioArrays[btnVal]);
 
 // Play/Pause Buttons
 $("#playBtn").on("click", function () {
