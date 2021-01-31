@@ -285,26 +285,6 @@ function randomChoice() {
 function searchAudioDB() {
   var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${fitnessArr[choice].artist}`;
 
-<<<<<<< HEAD
-  const settings = {
-    async: true,
-    crossDomain: true,
-    url: audioDBUrl,
-    method: "GET",
-    headers: {
-      "x-rapidapi-key": "164d50a740msh07c5f9842e61e21p12b55ajsn9f08d461916f",
-      "x-rapidapi-host": "theaudiodb.p.rapidapi.com",
-    },
-  };
-  $.ajax(settings).done(function (response) {
-    console.log("Discography:", response);
-    console.log("Artist:", choice);
-    // create div for album info
-    // let albumInfoDiv = $('<div>').addClass('album-info');
-    // // append to discog section
-    // $('#discog').append(albumInfoDiv);
-  });
-=======
 const settings = {
 async: true,
 crossDomain: true,
@@ -330,7 +310,6 @@ response.album.forEach(function (element) {
     $('#discog').append(albumInfoDiv);
   })
 });
->>>>>>> main
 }
 searchAudioDB();
 
