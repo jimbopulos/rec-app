@@ -8,22 +8,38 @@ body {
 
 #welcomePage {
   background-image: url("https://wallpapercave.com/wp/wp4546211.jpg");
+  background-blend-mode: hard-light;
+  backdrop-filter: blur(2px);
 }
 
+/* nav bar */
 .menu {
   background-color: white !important;
 }
 
-.categoryBtn {
+.appButton {
   background-color: #84e795 !important;
+  margin-top: 15px !important;
+  width: 10em;
+  border-radius: 27px !important;
 }
 
 .footer {
   position: fixed;
+  display: flex;
+  align-items: center;
   bottom: -14px;
   margin: auto;
+  padding: 0.75em;
   width: 101%;
   background-color: white !important;
+}
+
+.audioSection > button {
+  background-color: #84e795;
+  border: 0px;
+  border-radius: 27px;
+  padding: 0.5em;
 }
 
 /* body::before {
@@ -50,3 +66,24 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Makes bar with START button go down */
+#startingContent {
+  margin-top: 25em;
+}
+
+/* category buttons in categories.html (2nd page)*/
+#catButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80%;
+}
+
+#recdPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
