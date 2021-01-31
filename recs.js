@@ -26,7 +26,6 @@ $(document).ready(function () {
       autoplayHoverPause: true,
       autoplayTimeout: 2000,
       loop: true,
-
     });
   }
   recOwlCarouselStart();
@@ -71,6 +70,6 @@ $(document).ready(function () {
 
   var id = getParameterByName("id");
 
-  $("#category").text(id);
+  // $("#category").text(id);
   searchUnsplash(id);
 });
