@@ -308,10 +308,17 @@ headers: {
 $.ajax(settings).done(function (response) {
 console.log('Discography:', response);
 console.log('Artist:', choice);
-// create div for album info
-let albumInfoDiv = $('<div>').addClass('album-info');
-// append to discog section
-$('#discog').append(albumInfoDiv);
+console.log(response.album[0])
+// loop through discog div
+response.album.forEach(function (element) {
+  // create div for album info
+  let albumInfoDiv = $('<div class="album-info">');
+    // add album info for each item
+    albumInfoDiv.html(`<div>Album: ${element.strAlbum}</div>
+    <div>Released: ${element.intYearReleased}</div>`);
+    // append to discog section
+    $('#discog').append(albumInfoDiv);
+  })
 });
 }
 searchAudioDB();
