@@ -1,9 +1,13 @@
+<<<<<<< HEAD
+// STARTING VALUES =========================
+=======
 $(document).ready(function () {
   // DEPENDENCIES ============================
   // let categBtns = $(".categoryBtn");
   // console.log("Data-Value: ", categBtns.attr("data-value"));
 
   // STARTING VALUES =========================
+>>>>>>> main
 
   let fitnessArr = [
     {
@@ -287,9 +291,17 @@ $(document).ready(function () {
     arrayChoice = Number(localStorage.getItem("Category-Value"));
   }
 
+<<<<<<< HEAD
+// FUNCTIONS ========================================
+
+// AJAX request for TheAudioDB
+function searchAudioDB() {
+  var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${audioArrays[arrayChoice].artist}`;
+=======
   // AJAX request for TheAudioDB
   function searchAudioDB() {
     var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${audioArrays[arrayChoice].artist}`;
+>>>>>>> main
 
     const settings = {
       async: true,
