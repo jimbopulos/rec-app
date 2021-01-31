@@ -12,6 +12,15 @@ body {
   backdrop-filter: blur(2px);
 }
 
+#logoContainer {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+#logoIcon {
+  width: 100px;
+}
+
 /* nav bar */
 .menu {
   background-color: white !important;
@@ -42,16 +51,6 @@ body {
   padding: 0.5em;
 }
 
-/* body::before {
-  content: "";
-  background-size: cover;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  opacity: 0.5;
-} */
-
 .carouselCard {
   width: 500px;
   height: 500px;
@@ -69,7 +68,11 @@ body {
 
 /* Makes bar with START button go down */
 #startingContent {
-  margin-top: 25em;
+  margin-top: 9em;
+}
+
+#textContainer {
+  padding: 10px 0px;
 }
 
 /* category buttons in categories.html (2nd page)*/
