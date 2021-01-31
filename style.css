@@ -87,3 +87,6 @@ body {
   align-items: center;
 }
 
+.owl-nav {
+  display: none;
+}
