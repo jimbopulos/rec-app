@@ -279,8 +279,41 @@ let audioArrays = [
 
 function randomChoice() {
   choice = Math.floor(Math.random() * 10);
-  return choice;
+  // array for artists by random choice
+  let artistOutput = 
+  [fitnessArr[choice].artist,
+  choresArr[choice].artist,
+  studyArr[choice].artist,
+  calmArr[choice].artist,
+  readArray[choice].artist,
+  danceArr[choice].artist]
+// AJAX request for TheAudioDB
+function searchAudioDB() {
+var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${fitnessArr[choice].artist}`;
+
+const settings = {
+  async: true,
+  crossDomain: true,
+  url: audioDBUrl,
+  method: "GET",
+  headers: {
+    "x-rapidapi-key": "164d50a740msh07c5f9842e61e21p12b55ajsn9f08d461916f",
+    "x-rapidapi-host": "theaudiodb.p.rapidapi.com",
+  },
+};
+$.ajax(settings).done(function (response) {
+  console.log('Discography:', response);
+  console.log('Artist:', choice);
+});
 }
+searchAudioDB();
+}
+
+
+
+// console.log(fitnessArr[choice].artist);
+
+
 
 // USER INTERACTIONS =======================
 $(".categoryBtn").click(function () {
