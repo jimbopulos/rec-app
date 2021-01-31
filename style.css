@@ -16,7 +16,7 @@ body {
   background-color: white !important;
 }
 
-.categoryBtn {
+.main > button {
   background-color: #84e795 !important;
 }
 
@@ -55,4 +55,12 @@ body {
 
 #startingContent {
   margin-top: 25em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
