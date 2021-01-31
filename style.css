@@ -11,6 +11,16 @@ body {
   padding-bottom: 200px;
 }
 
+#random,
+#fitness,
+#chores,
+#study,
+#calm,
+#read,
+#dance {
+  box-shadow: 3px 3px;
+}
+
 #welcomePage {
   background-image: url("https://wallpapercave.com/wp/wp4546211.jpg");
   background-blend-mode: hard-light;
