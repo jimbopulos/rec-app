@@ -281,30 +281,17 @@ function randomChoice() {
   choice = Math.floor(Math.random() * 10);
 }
 
+// Locally stores category button's data value
+if (localStorage.getItem("Category-Value")) {
+  arrayChoice = Number(localStorage.getItem("Category-Value"));
+}
+
+console.log(audioArrays[arrayChoice].artist)
+
 // AJAX request for TheAudioDB
 function searchAudioDB() {
-  var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${fitnessArr[choice].artist}`;
+  var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${audioArrays[arrayChoice].artist}`;
 
-<<<<<<< HEAD
-  const settings = {
-    async: true,
-    crossDomain: true,
-    url: audioDBUrl,
-    method: "GET",
-    headers: {
-      "x-rapidapi-key": "164d50a740msh07c5f9842e61e21p12b55ajsn9f08d461916f",
-      "x-rapidapi-host": "theaudiodb.p.rapidapi.com",
-    },
-  };
-  $.ajax(settings).done(function (response) {
-    console.log("Discography:", response);
-    console.log("Artist:", choice);
-    // create div for album info
-    // let albumInfoDiv = $('<div>').addClass('album-info');
-    // // append to discog section
-    // $('#discog').append(albumInfoDiv);
-  });
-=======
 const settings = {
 async: true,
 crossDomain: true,
@@ -316,10 +303,8 @@ headers: {
 },
 };
 $.ajax(settings).done(function (response) {
-console.log('Discography:', response);
-console.log('Artist:', choice);
-console.log(response.album[0])
 // loop through discog div
+console.log(response)
 response.album.forEach(function (element) {
   // create div for album info
   let albumInfoDiv = $('<div class="album-info">');
@@ -330,16 +315,8 @@ response.album.forEach(function (element) {
     $('#discog').append(albumInfoDiv);
   })
 });
->>>>>>> main
 }
 searchAudioDB();
-
-// console.log(fitnessArr[choice].artist);
-
-// Locally stores category button's data value
-if (localStorage.getItem("Category-Value")) {
-  arrayChoice = Number(localStorage.getItem("Category-Value"));
-}
 
 // USER INTERACTIONS =======================
 $(".categoryBtn").click(function () {
