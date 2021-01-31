@@ -18,7 +18,7 @@ body {
 #calm,
 #read,
 #dance {
-  box-shadow: 3px 3px;
+  box-shadow: 3px 3px 2px;
 }
 
 #welcomePage {
@@ -99,6 +99,11 @@ body {
   align-items: center;
   justify-content: space-evenly;
   height: 80%;
+}
+
+#playBtn,
+#pauseBtn {
+  box-shadow: 3px 3px 2px;
 }
 
 #recdPage {
