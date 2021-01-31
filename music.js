@@ -1,7 +1,3 @@
-// DEPENDENCIES ============================
-// let categBtns = $(".categoryBtn");
-// console.log("Data-Value: ", categBtns.attr("data-value"));
-
 // STARTING VALUES =========================
 
 let fitnessArr = [
@@ -286,6 +282,8 @@ if (localStorage.getItem("Category-Value")) {
   arrayChoice = Number(localStorage.getItem("Category-Value"));
 }
 
+// FUNCTIONS ========================================
+
 // AJAX request for TheAudioDB
 function searchAudioDB() {
   var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${audioArrays[arrayChoice].artist}`;
@@ -301,9 +299,6 @@ function searchAudioDB() {
     },
   };
   $.ajax(settings).done(function (response) {
-    console.log("Discography:", response);
-    console.log("Artist:", choice);
-    console.log(response.album[0]);
     // loop through discog div
     response.album.forEach(function (element) {
       // create div for album info
