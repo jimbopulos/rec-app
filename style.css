@@ -7,8 +7,8 @@ body {
 }
 
 /* Allows content hidden behind footer to show */
-#main {
-  padding-bottom: 100px;
+.main {
+  padding-bottom: 200px;
 }
 
 #welcomePage {
