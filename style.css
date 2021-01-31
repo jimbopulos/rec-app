@@ -22,12 +22,8 @@ body {
 #calm,
 #read,
 #dance {
-<<<<<<< HEAD
-  box-shadow: 3px 3px 2px;
-=======
-  box-shadow: 3px 3px;
+  box-shadow: 3px 3px 2px white;
   padding-bottom: 35px !important;
->>>>>>> main
 }
 
 #welcomePage {
@@ -112,7 +108,7 @@ body {
 
 #playBtn,
 #pauseBtn {
-  box-shadow: 3px 3px 2px;
+  box-shadow: 3px 3px 2px black;
 }
 
 #recdPage {
