@@ -93,44 +93,44 @@ $(document).ready(function () {
 
   let studyArr = [
     {
-      artist: "Mozart",
-      song: "./Audio/study/Lacrimosa.mp3",
+      artist: "Red Garland",
+      song: "Soul Junction",
     },
     {
-      artist: "Bach",
-      song: "./Audio/study/Air.mp3",
+      artist: "Horace Silver",
+      song: "Song For My Father",
     },
     {
-      artist: "Scriabin",
-      song: "./Audio/study/Etudes.mp3",
+      artist: "Dave Brubeck",
+      song: "In Your Own Sweet Way",
     },
     {
       artist: "J Dilla",
       song: "./Audio/study/Wont_Do.mp3",
     },
     {
-      artist: "Hadyn",
-      song: "./Audio/study/Surprise.mp3",
+      artist: "Oscar Peterson",
+      song: "Blue and Sentimental",
     },
     {
-      artist: "Beethoven",
-      song: "./Audio/study/Moonlight.mp3",
+      artist: "Coleman Hawkins",
+      song: "Out of Nowhere",
     },
     {
-      artist: "Chopin",
-      song: "./Audio/study/Nocturne.mp3",
+      artist: "Chick Corea",
+      song: "Crystal Silence",
     },
     {
-      artist: "Tchaikovsky",
-      song: "./Audio/study/Valse.mp3",
+      artist: "Lester Young",
+      song: "There Will Never Another You",
     },
     {
-      artist: "Stravinsky",
-      song: "./Audio/study/Waltz.mp3",
+      artist: "Ron Carter",
+      song: "Bye Bye Blackbird",
     },
     {
-      artist: "Mussorgsky",
-      song: "./Audio/study/A_Tear.mp3",
+      artist: "Bobby Timmons",
+      song: "Moanin",
     },
   ];
 
@@ -156,8 +156,8 @@ $(document).ready(function () {
       song: "./Audio/calm/Outra_Vez.mp3",
     },
     {
-      artist: "Debussy",
-      song: "./Audio/calm/Reverie.mp3",
+      artist: "Billie Holiday",
+      song: "Blue Moon",
     },
     {
       artist: "Frank Ocean",
@@ -179,32 +179,32 @@ $(document).ready(function () {
 
   let readArray = [
     {
-      artist: "Chopin",
-      song: "./Audio/study/Nocturne.mp3",
+      artist: "Wes Mongomery",
+      song: "Days Of Wine and Roses",
     },
     {
-      artist: "Debussy",
-      song: "./Audio/calm/Reverie.mp3",
+      artist: "Bud Powell",
+      song: "April in Paris",
     },
     {
-      artist: "Satie",
-      song: "./Audio/read/Gymnopedie.mp3",
+      artist: "John Coltrane",
+      song: "Naima",
     },
     {
-      artist: "Elgar",
-      song: "./Audio/read/Salut.mp3",
+      artist: "Mary Lou Williams",
+      song: "It Ain't Necessarily So",
     },
     {
-      artist: "Grieg",
-      song: "./Audio/read/Peace_of_the_Woods.mp3",
+      artist: "Herbie Hancock",
+      song: "Tell Me a Bedtime Story",
     },
     {
-      artist: "Schumann",
-      song: "./Audio/read/Traumerei.mp3",
+      artist: "Thelonious Monk",
+      song: "Round Midnight",
     },
     {
-      artist: "Vivaldi",
-      song: "./Audio/read/La_Stravaganza.mp3",
+      artist: "Miles Davis",
+      song: "So What",
     },
     {
       artist: "Pablo Nouvelle",
@@ -215,8 +215,8 @@ $(document).ready(function () {
       song: "./Audio/read/Mr_Lawrence.mp3",
     },
     {
-      artist: "Ravel",
-      song: "./Audio/read/Pavane.mp3",
+      artist: "Nina Simon",
+      song: "Feeling Good",
     },
   ];
 
