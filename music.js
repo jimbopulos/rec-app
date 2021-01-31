@@ -295,23 +295,6 @@ function randomChoice() {
 function searchAudioDB() {
   var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${fitnessArr[choice].artist}`;
 
-<<<<<<< HEAD
-  const settings = {
-    async: true,
-    crossDomain: true,
-    url: audioDBUrl,
-    method: "GET",
-    headers: {
-      "x-rapidapi-key": "164d50a740msh07c5f9842e61e21p12b55ajsn9f08d461916f",
-      "x-rapidapi-host": "theaudiodb.p.rapidapi.com",
-    },
-  };
-  $.ajax(settings).done(function (response) {
-    console.log("Discography:", response);
-    console.log("Artist:", choice);
-    let albumInfo;
-  });
-=======
 const settings = {
 async: true,
 crossDomain: true,
@@ -325,12 +308,18 @@ headers: {
 $.ajax(settings).done(function (response) {
 console.log('Discography:', response);
 console.log('Artist:', choice);
-// create div for album info
-// let albumInfoDiv = $('<div>').addClass('album-info');
-// // append to discog section
-// $('#discog').append(albumInfoDiv);
+console.log(response.album[0])
+// loop through discog div
+response.album.forEach(function (element) {
+  // create div for album info
+  let albumInfoDiv = $('<div class="album-info">');
+    // add album info for each item
+    albumInfoDiv.html(`<div>Album: ${element.strAlbum}</div>
+    <div>Released: ${element.intYearReleased}</div>`);
+    // append to discog section
+    $('#discog').append(albumInfoDiv);
+  })
 });
->>>>>>> main
 }
 searchAudioDB();
 
