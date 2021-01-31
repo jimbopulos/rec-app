@@ -74,6 +74,8 @@ body {
 /* Makes bar with START button go down */
 #startingContent {
   margin-top: 9em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 #textContainer {
