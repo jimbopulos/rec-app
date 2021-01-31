@@ -89,3 +89,10 @@ body {
   flex-direction: column;
   align-items: center;
 }
+<<<<<<< HEAD
+=======
+
+.owl-nav {
+  display: none;
+}
+>>>>>>> main
