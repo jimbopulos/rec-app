@@ -7,8 +7,8 @@ body {
 }
 
 /* Allows content hidden behind footer to show */
-#main {
-  padding-bottom: 100px;
+.main {
+  padding-bottom: 200px;
 }
 
 #welcomePage {
@@ -74,6 +74,8 @@ body {
 /* Makes bar with START button go down */
 #startingContent {
   margin-top: 9em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 #textContainer {
