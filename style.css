@@ -18,6 +18,9 @@ body {
 
 .main > button {
   background-color: #84e795 !important;
+  margin-top: 15px !important;
+  width: 10em;
+  border-radius: 27px !important;
 }
 
 .footer {
