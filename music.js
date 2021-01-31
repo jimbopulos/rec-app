@@ -309,9 +309,11 @@ function searchAudioDB() {
       // append to discog section
       $("#discog").append(albumInfoDiv);
     });
+    $('.album-info').prepend(`Artist: ${audioArrays[arrayChoice].artist}`);
   });
 }
 searchAudioDB();
+
 
 // USER INTERACTIONS =======================
 $(".categoryBtn").click(function () {
