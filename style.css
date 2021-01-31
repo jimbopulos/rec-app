@@ -22,8 +22,12 @@ body {
 #calm,
 #read,
 #dance {
+<<<<<<< HEAD
+  box-shadow: 3px 3px 2px;
+=======
   box-shadow: 3px 3px;
   padding-bottom: 35px !important;
+>>>>>>> main
 }
 
 #welcomePage {
@@ -104,6 +108,11 @@ body {
   align-items: center;
   justify-content: space-evenly;
   height: 80%;
+}
+
+#playBtn,
+#pauseBtn {
+  box-shadow: 3px 3px 2px;
 }
 
 #recdPage {
