@@ -301,8 +301,8 @@ const settings = {
   },
 };
 $.ajax(settings).done(function (response) {
-  console.log(response);
-  console.log('Artist:', choice)
+  console.log('Discography:', response);
+  console.log('Artist:', choice);
 });
 }
 searchAudioDB();
