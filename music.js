@@ -230,7 +230,7 @@ let danceArr = [
   },
   {
     artist: "Elvis Crespo",
-    song: "./Audio/dance/Suavmente.mp3",
+    song: "./Audio/dance/Suavemente.mp3",
   },
   {
     artist: "KAYTRANADA",
@@ -263,6 +263,7 @@ let danceArr = [
 ];
 
 let choice = 0;
+let arrayChoice = 0;
 
 // Set choice to a random number and picking a random song from the array
 randomChoice();
@@ -276,86 +277,58 @@ let audioArrays = [
   danceArr[choice].song,
 ];
 
+// array for artists by random choice
+let artistOutput = [
+  fitnessArr[choice].artist,
+  choresArr[choice].artist,
+  studyArr[choice].artist,
+  calmArr[choice].artist,
+  readArray[choice].artist,
+  danceArr[choice].artist,
+];
+
 function randomChoice() {
   choice = Math.floor(Math.random() * 10);
-<<<<<<< HEAD
-  // array for artists by random choice
-  let artistOutput = [
-    fitnessArr[choice].artist,
-    choresArr[choice].artist,
-    studyArr[choice].artist,
-    calmArr[choice].artist,
-    readArray[choice].artist,
-    danceArr[choice].artist,
-  ];
-  // AJAX request for TheAudioDB
-  function searchAudioDB() {
-    var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${fitnessArr[choice].artist}`;
-
-    const settings = {
-      async: true,
-      crossDomain: true,
-      url: audioDBUrl,
-      method: "GET",
-      headers: {
-        "x-rapidapi-key": "164d50a740msh07c5f9842e61e21p12b55ajsn9f08d461916f",
-        "x-rapidapi-host": "theaudiodb.p.rapidapi.com",
-      },
-    };
-    $.ajax(settings).done(function (response) {
-      console.log("Discography:", response);
-      console.log("Artist:", choice);
-    });
-  }
-  searchAudioDB();
 }
-=======
-  return choice;
-}
-
-// array for artists by random choice
-let artistOutput = 
-[fitnessArr[choice].artist,
-choresArr[choice].artist,
-studyArr[choice].artist,
-calmArr[choice].artist,
-readArray[choice].artist,
-danceArr[choice].artist]
 
 // AJAX request for TheAudioDB
 function searchAudioDB() {
-var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${fitnessArr[choice].artist}`;
+  var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${fitnessArr[choice].artist}`;
 
-const settings = {
-async: true,
-crossDomain: true,
-url: audioDBUrl,
-method: "GET",
-headers: {
-  "x-rapidapi-key": "164d50a740msh07c5f9842e61e21p12b55ajsn9f08d461916f",
-  "x-rapidapi-host": "theaudiodb.p.rapidapi.com",
-},
-};
-$.ajax(settings).done(function (response) {
-console.log('Discography:', response);
-console.log('Artist:', choice);
-let albumInfo
-});
+  const settings = {
+    async: true,
+    crossDomain: true,
+    url: audioDBUrl,
+    method: "GET",
+    headers: {
+      "x-rapidapi-key": "164d50a740msh07c5f9842e61e21p12b55ajsn9f08d461916f",
+      "x-rapidapi-host": "theaudiodb.p.rapidapi.com",
+    },
+  };
+  $.ajax(settings).done(function (response) {
+    console.log("Discography:", response);
+    console.log("Artist:", choice);
+    let albumInfo;
+  });
 }
 searchAudioDB();
 
->>>>>>> main
-
 // console.log(fitnessArr[choice].artist);
 
-// USER INTERACTIONS =======================
-// $(".categoryBtn").click(function () {
-//   console.log("Data-Value: ", $(this).data("value"));
-// });
+// Locally stores category button's data value
+if (localStorage.getItem("Category-Value")) {
+  arrayChoice = Number(localStorage.getItem("Category-Value"));
+}
 
-// Gets Link for Theme Song
+// USER INTERACTIONS =======================
+$(".categoryBtn").click(function () {
+  let dataVal = $(this).data("value");
+  localStorage.setItem("Category-Value", dataVal);
+});
+
+// Gets Link for Song
 var audioElement = document.createElement("audio");
-audioElement.setAttribute("src", audioArrays[0]);
+audioElement.setAttribute("src", audioArrays[arrayChoice]);
 
 // Play/Pause Buttons
 $("#playBtn").on("click", function () {
