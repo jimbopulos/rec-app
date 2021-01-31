@@ -288,34 +288,34 @@ $(document).ready(function () {
   }
 
   // AJAX request for TheAudioDB
-  function searchAudioDB() {
-    var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${audioArrays[arrayChoice].artist}`;
+  // function searchAudioDB() {
+  //   var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${audioArrays[arrayChoice].artist}`;
 
-    const settings = {
-      async: true,
-      crossDomain: true,
-      url: audioDBUrl,
-      method: "GET",
-      headers: {
-        "x-rapidapi-key": "164d50a740msh07c5f9842e61e21p12b55ajsn9f08d461916f",
-        "x-rapidapi-host": "theaudiodb.p.rapidapi.com",
-      },
-    };
-    $.ajax(settings).done(function (response) {
-      // loop through discog div
-      response.album.forEach(function (element) {
-        // create div for album info
-        let albumInfoDiv = $('<div class="album-info">');
-        // add album info for each item
-        albumInfoDiv.html(`<div>Album: ${element.strAlbum}</div>
-    <div>Released: ${element.intYearReleased}</div>`);
-        // append to discog section
-        $("#discog").append(albumInfoDiv);
-      });
-      $(".album-info").prepend(`Artist: ${audioArrays[arrayChoice].artist}`);
-    });
-  }
-  searchAudioDB();
+  //   const settings = {
+  //     async: true,
+  //     crossDomain: true,
+  //     url: audioDBUrl,
+  //     method: "GET",
+  //     headers: {
+  //       "x-rapidapi-key": "164d50a740msh07c5f9842e61e21p12b55ajsn9f08d461916f",
+  //       "x-rapidapi-host": "theaudiodb.p.rapidapi.com",
+  //     },
+  //   };
+  //   $.ajax(settings).done(function (response) {
+  //     // loop through discog div
+  //     response.album.forEach(function (element) {
+  //       // create div for album info
+  //       let albumInfoDiv = $('<div class="album-info">');
+  //       // add album info for each item
+  //       albumInfoDiv.html(`<div>Album: ${element.strAlbum}</div>
+  //   <div>Released: ${element.intYearReleased}</div>`);
+  //       // append to discog section
+  //       $("#discog").append(albumInfoDiv);
+  //     });
+  //     $(".album-info").prepend(`Artist: ${audioArrays[arrayChoice].artist}`);
+  //   });
+  // }
+  // searchAudioDB();
 
   // USER INTERACTIONS =======================
   $(".categoryBtn").click(function () {
