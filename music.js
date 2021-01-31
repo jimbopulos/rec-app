@@ -27,7 +27,7 @@ let fitnessArr = [
   },
   {
     artist: "Eminem",
-    song: "./Audio/fitness/Gozilla.mp3",
+    song: "./Audio/fitness/Godzilla.mp3",
   },
   {
     artist: "ABBA",
@@ -230,7 +230,7 @@ let danceArr = [
   },
   {
     artist: "Elvis Crespo",
-    song: "./Audio/dance/Suavmente.mp3",
+    song: "./Audio/dance/Suavemente.mp3",
   },
   {
     artist: "KAYTRANADA",
@@ -263,37 +263,48 @@ let danceArr = [
 ];
 
 let choice = 0;
+let arrayChoice = 0;
 
 // Set choice to a random number and picking a random song from the array
 randomChoice();
 
 let audioArrays = [
-  fitnessArr[choice].song,
-  choresArr[choice].song,
-  studyArr[choice].song,
-  calmArr[choice].song,
-  readArray[choice].song,
-  danceArr[choice].song,
+  fitnessArr[choice],
+  choresArr[choice],
+  studyArr[choice],
+  calmArr[choice],
+  readArray[choice],
+  danceArr[choice],
 ];
 
 function randomChoice() {
   choice = Math.floor(Math.random() * 10);
-  return choice;
 }
-
-// array for artists by random choice
-let artistOutput = 
-[fitnessArr[choice].artist,
-choresArr[choice].artist,
-studyArr[choice].artist,
-calmArr[choice].artist,
-readArray[choice].artist,
-danceArr[choice].artist]
 
 // AJAX request for TheAudioDB
 function searchAudioDB() {
-var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${fitnessArr[choice].artist}`;
+  var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${fitnessArr[choice].artist}`;
 
+<<<<<<< HEAD
+  const settings = {
+    async: true,
+    crossDomain: true,
+    url: audioDBUrl,
+    method: "GET",
+    headers: {
+      "x-rapidapi-key": "164d50a740msh07c5f9842e61e21p12b55ajsn9f08d461916f",
+      "x-rapidapi-host": "theaudiodb.p.rapidapi.com",
+    },
+  };
+  $.ajax(settings).done(function (response) {
+    console.log("Discography:", response);
+    console.log("Artist:", choice);
+    // create div for album info
+    // let albumInfoDiv = $('<div>').addClass('album-info');
+    // // append to discog section
+    // $('#discog').append(albumInfoDiv);
+  });
+=======
 const settings = {
 async: true,
 crossDomain: true,
@@ -307,24 +318,38 @@ headers: {
 $.ajax(settings).done(function (response) {
 console.log('Discography:', response);
 console.log('Artist:', choice);
-let albumInfo
+console.log(response.album[0])
+// loop through discog div
+response.album.forEach(function (element) {
+  // create div for album info
+  let albumInfoDiv = $('<div class="album-info">');
+    // add album info for each item
+    albumInfoDiv.html(`<div>Album: ${element.strAlbum}</div>
+    <div>Released: ${element.intYearReleased}</div>`);
+    // append to discog section
+    $('#discog').append(albumInfoDiv);
+  })
 });
+>>>>>>> main
 }
 searchAudioDB();
 
-
 // console.log(fitnessArr[choice].artist);
 
-
+// Locally stores category button's data value
+if (localStorage.getItem("Category-Value")) {
+  arrayChoice = Number(localStorage.getItem("Category-Value"));
+}
 
 // USER INTERACTIONS =======================
-// $(".categoryBtn").click(function () {
-//   console.log("Data-Value: ", $(this).data("value"));
-// });
+$(".categoryBtn").click(function () {
+  let dataVal = $(this).data("value");
+  localStorage.setItem("Category-Value", dataVal);
+});
 
-// Gets Link for Theme Song
-var audioElement = document.createElement("audio");
-audioElement.setAttribute("src", audioArrays[0]);
+// Gets Link for Song
+let audioElement = document.createElement("audio");
+audioElement.setAttribute("src", audioArrays[arrayChoice].song);
 
 // Play/Pause Buttons
 $("#playBtn").on("click", function () {
