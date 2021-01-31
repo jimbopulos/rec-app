@@ -58,27 +58,6 @@ $(document).ready(function () {
     return Math.floor(Math.random() * (max - min) + min);
   }
 
-  // AJAX request for TheAudioDB
-  function searchAudioDB(searchWord) {
-    var audioDBUrl = `https://theaudiodb.p.rapidapi.com/discography.php?s=${searchWord}`;
-
-    const settings = {
-      async: true,
-      crossDomain: true,
-      url: audioDBUrl,
-      method: "GET",
-      headers: {
-        "x-rapidapi-key": "164d50a740msh07c5f9842e61e21p12b55ajsn9f08d461916f",
-        "x-rapidapi-host": "theaudiodb.p.rapidapi.com",
-      },
-    };
-    $.ajax(settings).done(function (response) {
-      console.log(response);
-    });
-  }
-
-  searchAudioDB();
-
   //get value of any parameter from the url (regex, regular expressions, on w3School)
   function getParameterByName(name, url = window.location.href) {
     name = name.replace(/[\[\]]/g, "\\$&");
