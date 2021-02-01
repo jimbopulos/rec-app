@@ -33,48 +33,35 @@
   <!-- ********** BODY START *********** -->
   <body>
     <!-- navbar -->
-    <nav class="ui secondary menu">
+    <nav class="ui secondary menu" id="recs-navbar">
       <a class="item" href="index.html">
         <img src="images/symbol-small-r-bttm-rgt.png" alt="Rec logo" />
       </a>
-      <!-- <div class="right menu">
-        <a class="ui item"><i class="fas fa-user-cog"></i></a>
-      </div> -->
+      <div class="right menu">
+        <img src="images/just-rec.png" id="just-rec-logo" alt="Rec Text Logo">
+      </div>
     </nav>
 
     <div id="recdPage" class="main">
-      <h1>Get Rec'd</h1>
+      <h1 id="get-recd">Get Rec'd!</h1>
       <!-- Carrousel  -->
       <div class="owl-carousel"></div>
       <div id="carousel"></div>
-
       <!-- populate area with music info - list of generated artists' albums-->
       <div id="discog">
-        <h4 id="artist-name">Artist: Bill Evans</h4>
-        <h5 id="song-playing">Now Playing: Nardis</h5>
+        <div id="artist-name"></div>
+        <div id="song-playing"></div>
         <div id="album-list">
+          <br>
           <p>Like your Rec? Check out more from this artist!</p>
-          <table class="ui celled table">
-            <thead>
+          <hr>
+          <table class="ui celled table" id="discog-table">
+            <thead id="discogTableHead">
               <tr>
                 <th>Album</th>
                 <th>Release Year</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td data-label="album-name">BleepBlorp</td>
-                <td data-label="release-year">YYYY</td>
-              </tr>
-              <tr>
-                <td data-label="album-name">BloopBlop</td>
-                <td data-label="release-year">YYYY</td>
-              </tr>
-              <tr>
-                <td data-label="album-name">MeepMeep</td>
-                <td data-label="release-year">YYYY</td>
-              </tr>
-            </tbody>
           </table>
         </div>
       </div>

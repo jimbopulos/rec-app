@@ -1,14 +1,46 @@
 # REC
 
-## Website Summary
+## What is REC?
 
-Welcome to my website where you can use this day planner to plan out your day! You have the ability to type in and save items within every text box. Deleting the text and saving the box will leave the box empty when you reload the page. The current date and time is displayed at the top of the screen. Depending on the time of day, the colors of the text boxes will change accordingly. So if the time has passed then the boxes will be greyed out. Creating this planner really helped me understand using local storage, accessing data within an object array, and utilizing jquery to specifically grab information with clicks. To improve this page I would improve the design, add multiple days, and include a completed button to reset the text field.
+Find yourself getting tired of the monotony of both your daily life and your music?
 
-## Wesbsite Images
+‘Rec’ is:
 
-![Page Preview](/images/Preview.PNG)
-![Example of Storage](/images/Storage.PNG)
+- simple
+- an easy-to-use app
+- built to make daily tasks more enjoyable
+- helps you discover new music!
 
-## URL to Website
+With the click of a button, receive a series of images based on your selection, and a whole array of music recommendations! While you sift through the crates, a popular song by a recommended artist will play to set the mood.
 
-https://ldelgadoiii.github.io/DayPlanner/
+## Description
+
+'Rec' requests information from two different server-side APIs, Unsplash and TheAudioMusicDB. We used JavaScript to make the app interactive and allow the user to retrieve relevant information in a speedy manner. To style Rec, we used Semantic UI and Owl.Carousel.js.
+
+The application has six built-in categories, and a random option for when the user is feeling adventurous! Each category will return a slideshow of images, provide a suggestion of music and play a song, all to put the user in the right mood for the user’s activity of choice.
+
+## Technologies used
+
+- HTML
+- CSS
+- Semantic UI
+- JavaScript
+- jQuery
+- Unsplash API
+- TheAudioDB API
+
+## Web Application Images
+
+![Home Page Preview](images/Rec-app-home.png)
+![Categories Page Preview](images/Rec-app-categories.png)
+![Recs Page Preview](images/Rec-app-recs.png)
+
+## Development Team
+
+- **Carolina Rizk**
+- **Loreto Delgado III**
+- **James Galantino**
+
+## URL to Deployed Application
+
+https://jimbopulos.github.io/rec-app/
