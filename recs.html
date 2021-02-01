@@ -81,16 +81,20 @@
     </div>
 
     <!-- footer  -->
-    <div class="ui secondary menu footer">
-      <a href="categories.html" class="item"
-        ><i class="fas fa-arrow-circle-left fa-3x"></i
-      ></a>
-      <!-- Audio Control Section  -->
-      <div class="audioSection">
-        <button id="playBtn">Play</button>
-        <button id="pauseBtn">Pause</button>
+    <div class="ui grid footer">
+      <div class="three wide column">
+        <a href="categories.html" class="item"
+          ><i class="fas fa-arrow-circle-left fa-3x"></i
+        ></a>
       </div>
-      <div class="right menu">
+      <div class="center aligned ten wide column">
+        <!-- Audio Control Section  -->
+        <div class="audioSection">
+          <i class="far fa-play-circle fa-3x" id="playBtn"></i>
+          <i class="far fa-pause-circle fa-3x" id="pauseBtn"></i>
+        </div>
+      </div>
+      <div class="right aligned three wide column">
         <a href="index.html" class="ui item"
           ><i class="fas fa-home fa-3x"></i
         ></a>
