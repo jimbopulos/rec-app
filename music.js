@@ -1,50 +1,56 @@
 $(document).ready(function () {
-  // DEPENDENCIES ============================
-  // let categBtns = $(".categoryBtn");
-  // console.log("Data-Value: ", categBtns.attr("data-value"));
-
   // STARTING VALUES =========================
 
   let fitnessArr = [
     {
       artist: "MEDUZA",
       song: "./Audio/fitness/Lose_Control.mp3",
+      title: "Lose Control",
     },
     {
       artist: "Diplo",
       song: "./Audio/fitness/Looking_For_Me.mp3",
+      title: "Looking For Me",
     },
     {
       artist: "Kendrick Lamar",
       song: "./Audio/fitness/Money_Trees.mp3",
+      title: "Money Trees",
     },
     {
       artist: "Pitbull",
       song: "./Audio/fitness/Timber.mp3",
+      title: "Timber",
     },
     {
       artist: "50 Cent",
       song: "./Audio/fitness/Candy_Shop.mp3",
+      title: "Candy Shop",
     },
     {
       artist: "Eminem",
       song: "./Audio/fitness/Godzilla.mp3",
+      title: "Godzilla",
     },
     {
       artist: "ABBA",
       song: "./Audio/fitness/Gimme.mp3",
+      title: "Gimme! A Man After Midnight",
     },
     {
       artist: "David Guetta",
       song: "./Audio/fitness/Titanium.mp3",
+      title: "Titanium",
     },
     {
       artist: "Michael Jackson",
       song: "./Audio/fitness/Beat_It.mp3",
+      title: "Beat It",
     },
     {
       artist: "Technotronic",
       song: "./Audio/fitness/Pump_Up_The_Jam.mp3",
+      title: "Pump Up The Jam",
     },
   ];
 
@@ -52,42 +58,52 @@ $(document).ready(function () {
     {
       artist: "Bachman-Turner Overdrive",
       song: "./Audio/chores/Taking_Care_Of_Business.mp3",
+      title: "Taking Care of Business",
     },
     {
       artist: "Blondie",
       song: "./Audio/chores/One_Way_Or_Another.mp3",
+      title: "One Way or Another",
     },
     {
       artist: "Courtney Barnett",
       song: "./Audio/chores/Over_Everything.mp3",
+      title: "Over Everything",
     },
     {
       artist: "Soft Cell",
       song: "./Audio/chores/Tainted_Love.mp3",
+      title: "Tainted Love",
     },
     {
       artist: "Eurythmics",
       song: "./Audio/chores/Sweet_Dreams.mp3",
+      title: "Sweet Dreams",
     },
     {
       artist: "Natasha Bedingfield",
       song: "./Audio/chores/Unwritten.mp3",
+      title: "Unwritten",
     },
     {
       artist: "M.I.A.",
       song: "./Audio/chores/Paper_Planes.mp3",
+      title: "Paper Planes",
     },
     {
       artist: "Beyonce",
       song: "./Audio/chores/Love_On_Top.mp3",
+      title: "Love On Top",
     },
     {
       artist: "Kanye West",
       song: "./Audio/chores/Through_The_Wire.mp3",
+      title: "Through The Wire",
     },
     {
       artist: "B.o.B.",
       song: "./Audio/chores/Nothin_On_You.mp3",
+      title: "Nothin On You",
     },
   ];
 
@@ -303,15 +319,19 @@ $(document).ready(function () {
     };
     $.ajax(settings).done(function (response) {
       // append selected artist to artist name display
-      $('#artist-name').append(`<span>Artist: ${audioArrays[arrayChoice].artist}</span>`);
+      $("#artist-name").append(
+        `<span>Artist: ${audioArrays[arrayChoice].artist}</span>`
+      );
       // repeat for song name
-      $('#song-playing').append(`<span>Now Playing: ${audioArrays[arrayChoice].song}</span>`);
+      $("#song-playing").append(
+        `<span>Now Playing: ${audioArrays[arrayChoice].title}</span>`
+      );
       // loop through discog div
       response.album.forEach(function (element) {
         // create div for album info
         let albumInfoDiv = $('<tbody class="album-info">');
         // append row before placing data inside
-        let albumRow = albumInfoDiv.append('<tr>');
+        let albumRow = albumInfoDiv.append("<tr>");
         // add album info for each item
         albumRow.html(`<td>${element.strAlbum}</td>
     <td>${element.intYearReleased}</td>`);
