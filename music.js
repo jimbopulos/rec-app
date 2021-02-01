@@ -94,15 +94,15 @@ $(document).ready(function () {
   let studyArr = [
     {
       artist: "Red Garland",
-      song: "Soul Junction",
+      song: "./Audio/study/Soul_Junction.mp3",
     },
     {
       artist: "Horace Silver",
-      song: "Song For My Father",
+      song: "./Audio/study/Song_for_My_Father.mp3",
     },
     {
       artist: "Dave Brubeck",
-      song: "In Your Own Sweet Way",
+      song: "./Audio/study/Your_Own_Sweet_Way.mp3",
     },
     {
       artist: "J Dilla",
@@ -110,27 +110,27 @@ $(document).ready(function () {
     },
     {
       artist: "Oscar Peterson",
-      song: "Blue and Sentimental",
+      song: "./Audio/study/Blue_and_Sentimental.mp3",
     },
     {
       artist: "Coleman Hawkins",
-      song: "Out of Nowhere",
+      song: "./Audio/study/Out_Of_Nowhere.mp3",
     },
     {
       artist: "Chick Corea",
-      song: "Crystal Silence",
+      song: "./Audio/study/Crystal_Silence.mp3",
     },
     {
       artist: "Lester Young",
-      song: "There Will Never Another You",
+      song: "./Audio/study/Never_Be_Another_You.mp3",
     },
     {
       artist: "Ron Carter",
-      song: "Bye Bye Blackbird",
+      song: "./Audio/study/Blackbird.mp3",
     },
     {
       artist: "Bobby Timmons",
-      song: "Moanin",
+      song: "./Audio/study/Moanin.mp3",
     },
   ];
 
