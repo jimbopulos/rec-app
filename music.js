@@ -181,42 +181,52 @@ $(document).ready(function () {
     {
       artist: "Wes Mongomery",
       song: "./Audio/read/Days_of_Wine_and_Roses.mp3",
+      title: "Days of Wine",
     },
     {
       artist: "Bud Powell",
       song: "./Audio/read/April_in_Paris.mp3",
+      title: "April In Paris",
     },
     {
       artist: "John Coltrane",
       song: "./Audio/read/Naima.mp3",
+      title: "Naima",
     },
     {
       artist: "Mary Lou Williams",
       song: "./Audio/read/It_Aint_Necessarily_So.mp3",
+      title: "It Aint Necessarily So",
     },
     {
       artist: "Herbie Hancock",
       song: "./Audio/read/Tell_Me_a_Bedtime_Story.mp3",
+      title: "Tell Me a Betdtime Story",
     },
     {
       artist: "Thelonious Monk",
       song: "./Audio/read/Round_Midnight.mp3",
+      title: "Round Midnight",
     },
     {
       artist: "Miles Davis",
       song: "./Audio/read/So_What.mp3",
+      title: "So What",
     },
     {
       artist: "Pablo Nouvelle",
       song: "./Audio/read/Milambi.mp3",
+      title: "Milamby",
     },
     {
       artist: "Ryuichi Sakamoto",
       song: "./Audio/read/Mr_Lawrence.mp3",
+      title: "Mr. Lawrence",
     },
     {
       artist: "Nina Simon",
       song: "./Audio/read/Feeling_Good.mp3",
+      title: "Felling Good",
     },
   ];
 
@@ -224,42 +234,52 @@ $(document).ready(function () {
     {
       artist: "Calvin Harris",
       song: "./Audio/dance/Over_Now.mp3",
+      title: "Over Now",
     },
     {
       artist: "Celia Cruz",
       song: "./Audio/dance/Azucar.mp3",
+      title: "Azucar",
     },
     {
       artist: "Elvis Crespo",
       song: "./Audio/dance/Suavemente.mp3",
+      title: "Suavemente",
     },
     {
       artist: "KAYTRANADA",
       song: "./Audio/dance/Lite_Spots.mp3",
+      title: "Lite Spots",
     },
     {
       artist: "Daft Punk",
       song: "./Audio/dance/One_More_Time.mp3",
+      title: "One More Time",
     },
     {
       artist: "Disclosure",
       song: "./Audio/dance/Watch_Your_Step.mp3",
+      title: "Watch Your Step",
     },
     {
       artist: "Dua Lipa",
       song: "./Audio/dance/Break_My_Heart.mp3",
+      title: "Break My Heart",
     },
     {
       artist: "Oliver Heldens",
       song: "./Audio/dance/Take_A_Chance.mp3",
+      title: "Take A Chance",
     },
     {
       artist: "24kGoldn",
       song: "./Audio/dance/Mood.mp3",
+      title: "Mood",
     },
     {
       artist: "Major Lazer",
       song: "./Audio/dance/Thunder_and_Lightning.mp3",
+      title: "Thunder and Lightning",
     },
   ];
 
