@@ -37,9 +37,9 @@ The application has six built-in categories, and a random option for when the us
 
 ## Development Team
 
-**Carolina Rizk**
-**Loreto Delgado III**
-**James Galantino**
+- **Carolina Rizk**
+- **Loreto Delgado III**
+- **James Galantino**
 
 ## URL to Deployed Application
 
