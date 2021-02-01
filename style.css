@@ -60,10 +60,6 @@ body {
   border-radius: 27px !important;
 }
 
-#startBtn {
-  box-shadow: 3px 3px 2px white;
-}
-
 .footer {
   position: fixed;
   display: flex;
@@ -127,6 +123,17 @@ i {
   align-items: center;
 }
 
+#recs-navbar,
+#cat-navbar,
+#footer-navbar {
+  box-shadow: 3px 3px 5px black;
+}
+
 .owl-nav {
   display: none;
+}
+
+#discog-table {
+  box-shadow: 3px 3px 5px black;
+  border: 1px solid black;
 }
