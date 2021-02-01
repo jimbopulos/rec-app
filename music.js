@@ -157,7 +157,7 @@ $(document).ready(function () {
     },
     {
       artist: "Billie Holiday",
-      song: "Blue Moon",
+      song: "./Audio/calm/Blue_Moon.mp3",
     },
     {
       artist: "Frank Ocean",
@@ -180,31 +180,31 @@ $(document).ready(function () {
   let readArray = [
     {
       artist: "Wes Mongomery",
-      song: "Days Of Wine and Roses",
+      song: "./Audio/read/Days_of_Wine_and_Roses.mp3",
     },
     {
       artist: "Bud Powell",
-      song: "April in Paris",
+      song: "./Audio/read/April_in_Paris.mp3",
     },
     {
       artist: "John Coltrane",
-      song: "Naima",
+      song: "./Audio/read/Naima.mp3",
     },
     {
       artist: "Mary Lou Williams",
-      song: "It Ain't Necessarily So",
+      song: "./Audio/read/It_Aint_Necessarily_So.mp3",
     },
     {
       artist: "Herbie Hancock",
-      song: "Tell Me a Bedtime Story",
+      song: "./Audio/read/Tell_Me_a_Bedtime_Story.mp3",
     },
     {
       artist: "Thelonious Monk",
-      song: "Round Midnight",
+      song: "./Audio/read/Round_Midnight.mp3",
     },
     {
       artist: "Miles Davis",
-      song: "So What",
+      song: "./Audio/read/So_What.mp3",
     },
     {
       artist: "Pablo Nouvelle",
@@ -216,7 +216,7 @@ $(document).ready(function () {
     },
     {
       artist: "Nina Simon",
-      song: "Feeling Good",
+      song: "./Audio/read/Feeling_Good.mp3",
     },
   ];
 
