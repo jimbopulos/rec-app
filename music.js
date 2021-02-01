@@ -1,8 +1,4 @@
 $(document).ready(function () {
-  // DEPENDENCIES ============================
-  // let categBtns = $(".categoryBtn");
-  // console.log("Data-Value: ", categBtns.attr("data-value"));
-
   // STARTING VALUES =========================
 
   let fitnessArr = [
