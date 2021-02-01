@@ -121,7 +121,7 @@ $(document).ready(function () {
     {
       artist: "Dave Brubeck",
       song: "./Audio/study/Your_Own_Sweet_Way.mp3",
-      title: 'Your Own Sweet Way'
+      title: 'In Your Own Sweet Way'
     },
     {
       artist: "J Dilla",
@@ -217,7 +217,7 @@ $(document).ready(function () {
     {
       artist: "Wes Mongomery",
       song: "./Audio/read/Days_of_Wine_and_Roses.mp3",
-      title: "Days of Wine",
+      title: "Days of Wine and Roses",
     },
     {
       artist: "Bud Powell",
@@ -232,7 +232,7 @@ $(document).ready(function () {
     {
       artist: "Mary Lou Williams",
       song: "./Audio/read/It_Aint_Necessarily_So.mp3",
-      title: "It Aint Necessarily So",
+      title: "It Ain't Necessarily So",
     },
     {
       artist: "Herbie Hancock",
@@ -252,17 +252,17 @@ $(document).ready(function () {
     {
       artist: "Pablo Nouvelle",
       song: "./Audio/read/Milambi.mp3",
-      title: "Milamby",
+      title: "Milambi",
     },
     {
       artist: "Ryuichi Sakamoto",
       song: "./Audio/read/Mr_Lawrence.mp3",
-      title: "Mr. Lawrence",
+      title: "Merry Christmas, Mr. Lawrence",
     },
     {
       artist: "Nina Simon",
       song: "./Audio/read/Feeling_Good.mp3",
-      title: "Felling Good",
+      title: "Feeling Good",
     },
   ];
 
