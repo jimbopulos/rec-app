@@ -29,11 +29,17 @@ The application has six built-in categories, and a random option for when the us
 - Unsplash API
 - TheAudioDB API
 
-## Wesbsite Images
+## Web Application Images
 
 ![Home Page Preview](images/Rec-app-home.png)
 ![Categories Page Preview](images/Rec-app-categories.png)
 ![Recs Page Preview](images/Rec-app-recs.png)
+
+## Development Team
+
+**Carolina Rizk**
+**Loreto Delgado III**
+**James Galantino**
 
 ## URL to Deployed Application
 
