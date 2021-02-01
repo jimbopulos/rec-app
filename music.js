@@ -111,42 +111,52 @@ $(document).ready(function () {
     {
       artist: "Red Garland",
       song: "./Audio/study/Soul_Junction.mp3",
+      title: 'Soul Junction'
     },
     {
       artist: "Horace Silver",
       song: "./Audio/study/Song_for_My_Father.mp3",
+      title: 'Song for My Father'
     },
     {
       artist: "Dave Brubeck",
       song: "./Audio/study/Your_Own_Sweet_Way.mp3",
+      title: 'Your Own Sweet Way'
     },
     {
       artist: "J Dilla",
       song: "./Audio/study/Wont_Do.mp3",
+      title: "Won't Do"
     },
     {
       artist: "Oscar Peterson",
       song: "./Audio/study/Blue_and_Sentimental.mp3",
+      title: 'Blue and Sentimental'
     },
     {
       artist: "Coleman Hawkins",
       song: "./Audio/study/Out_Of_Nowhere.mp3",
+      title: 'Out of Nowhere'
     },
     {
       artist: "Chick Corea",
       song: "./Audio/study/Crystal_Silence.mp3",
+      title: 'Crystal Silence'
     },
     {
       artist: "Lester Young",
       song: "./Audio/study/Never_Be_Another_You.mp3",
+      title: 'There Will Never Be Another You'
     },
     {
       artist: "Ron Carter",
       song: "./Audio/study/Blackbird.mp3",
+      title: 'Bye Bye Blackbird'
     },
     {
       artist: "Bobby Timmons",
       song: "./Audio/study/Moanin.mp3",
+      title: "Moanin'"
     },
   ];
 
@@ -154,42 +164,52 @@ $(document).ready(function () {
     {
       artist: "Brian Eno",
       song: "./Audio/calm/Ascent.mp3",
+      title: 'Ascent'
     },
     {
       artist: "Jan Jelinek",
       song: "./Audio/calm/Tendency.mp3",
+      title: 'Tendency'
     },
     {
       artist: "Duke Ellington",
       song: "./Audio/calm/In_a_sentimental_mood.mp3",
+      title: 'In A Sentimental Mood'
     },
     {
       artist: "Bill Evans",
       song: "./Audio/calm/Nardis.mp3",
+      title: 'Nardis'
     },
     {
       artist: "Vince Guaraldi",
       song: "./Audio/calm/Outra_Vez.mp3",
+      title: 'Outra Vez'
     },
     {
       artist: "Billie Holiday",
       song: "./Audio/calm/Blue_Moon.mp3",
+      title: 'Blue Moon'
     },
     {
       artist: "Frank Ocean",
       song: "./Audio/calm/In_My_Room.mp3",
+      title: 'In My Room'
     },
     {
       artist: "J Dilla",
       song: "./Audio/calm/Sunbeams.mp3",
+      title: 'Sunbeams'
     },
     {
       artist: "Pink Floyd",
       song: "./Audio/calm/Us_and_Them.mp3",
+      title: 'Us and Them'
     },
     {
       artist: "Bob Marley",
       song: "./Audio/calm/Jammin.mp3",
+      title: "Jammin'"
     },
   ];
 
