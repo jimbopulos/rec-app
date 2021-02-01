@@ -41,6 +41,13 @@ body {
   width: 100px;
 }
 
+#just-rec-logo {
+  width: 7em;
+  height: 3.5em;
+  padding: 10px;
+  margin-top: 5px;
+}
+
 /* nav bar */
 .menu {
   background-color: white !important;
