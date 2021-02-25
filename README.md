@@ -1,5 +1,7 @@
 # REC
 
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
 ## What is REC?
 
 Find yourself getting tired of the monotony of both your daily life and your music?
