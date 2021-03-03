@@ -66,4 +66,4 @@ The application has six built-in categories, and a random option for when the us
 
 https://jimbopulos.github.io/rec-app/
 
-**IMPORTANT NOTE:** AudioMusicDB API currently disabled to avoid charges from overused calls. Please contact James at james.mgalantino@gmail.com if you have any questions.
+**IMPORTANT NOTE:** TheAudioDB API currently disabled to avoid charges from overused calls. Please contact James at james.mgalantino@gmail.com if you have any questions.
